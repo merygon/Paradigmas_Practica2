@@ -1,27 +1,34 @@
 ﻿namespace Practice1
 {
-    class PoliceCar : Vehicle
+    class PoliceCar : VehicleWithPlate
     {
         //constant string as TypeOfVehicle wont change allong PoliceCar instances
         private const string typeOfVehicle = "Police Car"; 
         private bool isPatrolling;
         private bool chasing;
-        private SpeedRadar speedRadar;
+        private SpeedRadar? speedRadar; // pueder ser null si no se proporciona
+        private PoliceStation policeStation;
 
-        public PoliceCar(string plate) : base(typeOfVehicle, plate)
+
+        public PoliceCar(string plate, PoliceStation policeStation, SpeedRadar? radar = null) : base(typeOfVehicle, plate)
         {
             isPatrolling = false;
-            chasing = false;    
-            speedRadar = new SpeedRadar();
+            chasing = false;
+            speedRadar = radar;
+            this.policeStation = policeStation;
         }
 
-        public void UseRadar(Vehicle vehicle)
+        public void UseRadar(VehicleWithPlate vehicle)
         {
-            if (isPatrolling)
+            if (isPatrolling && speedRadar != null)
             {
                 speedRadar.TriggerRadar(vehicle);
                 string meassurement = speedRadar.GetLastReading();
                 Console.WriteLine(WriteMessage($"Triggered radar. Result: {meassurement}"));
+                if (vehicle.GetSpeed() > speedRadar.GetLegalSpeed())
+                {
+                    policeStation.Alert(vehicle); 
+                }
             }
             else
             {
@@ -62,11 +69,19 @@
 
         public void PrintRadarHistory()
         {
-            Console.WriteLine(WriteMessage("Report radar speed history:"));
-            foreach (float speed in speedRadar.SpeedHistory)
+            if (speedRadar != null)
             {
-                Console.WriteLine(speed);
+                Console.WriteLine(WriteMessage("Report radar speed history:"));
+                foreach (float speed in speedRadar.SpeedHistory)
+                {
+                    Console.WriteLine(speed);
+                }
             }
+            else
+            {
+                Console.WriteLine(WriteMessage("has no radar."));
+            }
+            
         }
 
         public bool IsChasing()
@@ -83,16 +98,15 @@
             chasing = false;
         }
 
-        public string ChaseVehicle()
+        public void ChaseVehicle(VehicleWithPlate vehicle)
         {
-            string plate = GetPlate();
-            if (chasing)
+            if (chasing == true)
             {
-                return WriteMessage("chasing vehicle.");
+                Console.WriteLine(WriteMessage($"chasing vehicle with plate: {vehicle.GetPlate()}."));
             }
             else
             {
-                return WriteMessage("is not chasing any vehicle.");
+                Console.WriteLine(WriteMessage("is not chasing any vehicle."));
             }
         }
     }

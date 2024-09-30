@@ -15,7 +15,11 @@
             SpeedHistory = new List<float>();
         }
 
-        public void TriggerRadar(Vehicle vehicle)
+        public float GetLegalSpeed() 
+        { 
+            return legalSpeed; 
+        }
+        public void TriggerRadar(VehicleWithPlate vehicle)
         {
             plate = vehicle.GetPlate();
             speed = vehicle.GetSpeed();

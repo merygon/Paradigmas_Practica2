@@ -6,31 +6,46 @@ using System.Threading.Tasks;
 
 namespace Practice1
 {
-    internal class PoliceStation
+    internal class PoliceStation: IMessageWritter
     {
-        private bool Alarm {  get; set; }
-        private List<string> PoliceCars { get; set; }
+        private List<PoliceCar> PoliceCars { get; set; }
         
         private PoliceCar PoliceCar;
 
         public PoliceStation()
         {
-            Alarm = false;
-            // policeCar = new PoliceCar(string plate);
-            PoliceCars = new List<string>();
+            PoliceCars = new List<PoliceCar>();
         }
 
-        public string RegisterCar(string plate)
+        public void RegisterCar(PoliceCar PoliceCar)
         {
-            PoliceCars.Add(plate);
-            Console.WriteLine(PoliceCar.WriteMessage("registered."));
+            PoliceCars.Add(PoliceCar);
+            Console.WriteLine(WriteMessage($"registered police car with plate: {PoliceCar.GetPlate()}."));
         }
 
-        public void Alert()
+        public void Alert(VehicleWithPlate vehicle)
         {
-            Alarm = true;
-            PoliceCar.ActivateAlarm();
+            foreach (PoliceCar policeCar in PoliceCars)
+            {
+                if (policeCar.IsPatrolling())
+                {
+                    policeCar.ActivateAlarm();
+                    Console.WriteLine(WriteMessage($"Activated alarm for police car with plate: {policeCar.GetPlate()}"));
+                    policeCar.ChaseVehicle(vehicle);
+                }
+                else
+                {
+                    Console.WriteLine($"{policeCar.WriteMessage("Is not patrolling.")}");
+                }
+            }
         }
+
+        public string WriteMessage(string message)
+        {
+            return $"Police Station: {message}";
+        }
+
+
     }
 
 }

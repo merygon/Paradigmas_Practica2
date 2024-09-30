@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practice1
 {
-    internal class City : PoliceStation
+    internal class City : PoliceStation, IMessageWritter
     {
         private List<string> Licenses { get; set; }
         private PoliceStation PoliceStation { get; set; }
@@ -21,11 +21,18 @@ namespace Practice1
         public void RegisterLicense(string license) 
         {
             Licenses.Add(license);
+            Console.WriteLine(WriteMessage($"registered vehicle with plate: {license}"));
         }
 
         public void RetireLicense(string license)
         {
             Licenses.Remove(license);
+            Console.WriteLine(WriteMessage($"retired vehicle with plate: {license}"));
+        }
+
+        public string WriteMessage(string message)
+        {
+            return $"City: {message}";
         }
     }
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\meryg\\OneDrive\\Escritorio\\ICAI IMAT\\3º\\Paradigmas y Técnicas de Programación\\Prácticas\\Práctica 1\\P1-vehicle_example\\Practice1.csproj",
+      "projectUniqueName": "C:\\Users\\meryg\\OneDrive\\Escritorio\\ICAI IMAT\\3º\\Paradigmas y Técnicas de Programación\\Prácticas\\Práctica 2\\Practice1.csproj",
       "projectName": "Practice1",
-      "projectPath": "C:\\Users\\meryg\\OneDrive\\Escritorio\\ICAI IMAT\\3º\\Paradigmas y Técnicas de Programación\\Prácticas\\Práctica 1\\P1-vehicle_example\\Practice1.csproj",
+      "projectPath": "C:\\Users\\meryg\\OneDrive\\Escritorio\\ICAI IMAT\\3º\\Paradigmas y Técnicas de Programación\\Prácticas\\Práctica 2\\Practice1.csproj",
       "packagesPath": "C:\\Users\\meryg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\meryg\\OneDrive\\Escritorio\\ICAI IMAT\\3º\\Paradigmas y Técnicas de Programación\\Prácticas\\Práctica 1\\P1-vehicle_example\\obj\\",
+      "outputPath": "C:\\Users\\meryg\\OneDrive\\Escritorio\\ICAI IMAT\\3º\\Paradigmas y Técnicas de Programación\\Prácticas\\Práctica 2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\meryg\\AppData\\Roaming\\NuGet\\NuGet.Config",
