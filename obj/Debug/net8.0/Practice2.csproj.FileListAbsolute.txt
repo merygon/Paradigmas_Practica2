@@ -1,0 +1,15 @@
+C:\Users\meryg\OneDrive\Escritorio\ICAI IMAT\3º\Paradigmas y Técnicas de Programación\Prácticas\Práctica 2\bin\Debug\net8.0\Practice2.exe
+C:\Users\meryg\OneDrive\Escritorio\ICAI IMAT\3º\Paradigmas y Técnicas de Programación\Prácticas\Práctica 2\bin\Debug\net8.0\Practice2.deps.json
+C:\Users\meryg\OneDrive\Escritorio\ICAI IMAT\3º\Paradigmas y Técnicas de Programación\Prácticas\Práctica 2\bin\Debug\net8.0\Practice2.runtimeconfig.json
+C:\Users\meryg\OneDrive\Escritorio\ICAI IMAT\3º\Paradigmas y Técnicas de Programación\Prácticas\Práctica 2\bin\Debug\net8.0\Practice2.dll
+C:\Users\meryg\OneDrive\Escritorio\ICAI IMAT\3º\Paradigmas y Técnicas de Programación\Prácticas\Práctica 2\bin\Debug\net8.0\Practice2.pdb
+C:\Users\meryg\OneDrive\Escritorio\ICAI IMAT\3º\Paradigmas y Técnicas de Programación\Prácticas\Práctica 2\obj\Debug\net8.0\Practice2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\meryg\OneDrive\Escritorio\ICAI IMAT\3º\Paradigmas y Técnicas de Programación\Prácticas\Práctica 2\obj\Debug\net8.0\Practice2.AssemblyInfoInputs.cache
+C:\Users\meryg\OneDrive\Escritorio\ICAI IMAT\3º\Paradigmas y Técnicas de Programación\Prácticas\Práctica 2\obj\Debug\net8.0\Practice2.AssemblyInfo.cs
+C:\Users\meryg\OneDrive\Escritorio\ICAI IMAT\3º\Paradigmas y Técnicas de Programación\Prácticas\Práctica 2\obj\Debug\net8.0\Practice2.csproj.CoreCompileInputs.cache
+C:\Users\meryg\OneDrive\Escritorio\ICAI IMAT\3º\Paradigmas y Técnicas de Programación\Prácticas\Práctica 2\obj\Debug\net8.0\Practice2.sourcelink.json
+C:\Users\meryg\OneDrive\Escritorio\ICAI IMAT\3º\Paradigmas y Técnicas de Programación\Prácticas\Práctica 2\obj\Debug\net8.0\Practice2.dll
+C:\Users\meryg\OneDrive\Escritorio\ICAI IMAT\3º\Paradigmas y Técnicas de Programación\Prácticas\Práctica 2\obj\Debug\net8.0\refint\Practice2.dll
+C:\Users\meryg\OneDrive\Escritorio\ICAI IMAT\3º\Paradigmas y Técnicas de Programación\Prácticas\Práctica 2\obj\Debug\net8.0\Practice2.pdb
+C:\Users\meryg\OneDrive\Escritorio\ICAI IMAT\3º\Paradigmas y Técnicas de Programación\Prácticas\Práctica 2\obj\Debug\net8.0\Practice2.genruntimeconfig.cache
+C:\Users\meryg\OneDrive\Escritorio\ICAI IMAT\3º\Paradigmas y Técnicas de Programación\Prácticas\Práctica 2\obj\Debug\net8.0\ref\Practice2.dll
